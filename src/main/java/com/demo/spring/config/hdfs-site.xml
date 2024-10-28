@@ -1,0 +1,10 @@
+<configuration>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///Users/nischaysinghintech/hadoop/namenode</value> <!-- Set this to your desired directory -->
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///Users/nischaysinghintech/hadoop/datanode</value> <!-- Set this to your desired directory -->
+    </property>
+</configuration>
