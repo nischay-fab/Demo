@@ -2,8 +2,7 @@ package com.demo.spring.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import lombok.Data;  // Import Lombok's Data annotation
-
+import lombok.Data;
 @Data  
 @Entity
 @Table(name = "booking_no_show_reason")  

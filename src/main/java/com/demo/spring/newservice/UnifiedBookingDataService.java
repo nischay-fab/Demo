@@ -48,7 +48,6 @@ public class UnifiedBookingDataService {
             String hdfsPath = "/opt/homebrew/opt/hadoop" + dto.getBookingId();
             hdfsService.writeToHdfs(hdfsPath, unifiedBookingData.toString());
 
-
         }
     }
 }

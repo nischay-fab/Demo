@@ -38,3 +38,5 @@ public interface UnifiedBookingDataRepository extends JpaRepository<UnifiedBooki
                 nativeQuery=true)
     List<DataProjectionDto> fetchCombinedBookingData();
 }
+
+

@@ -1,9 +1,9 @@
 package com.demo.spring.model;
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import lombok.Data;  // Import Lombok's Data annotation
+import lombok.Data;
 
-@Data  // Lombok will generate getters, setters, toString, equals, and hashCode
+@Data
 @Entity
 @Table(name = "booking_corporate_details") 
 public class BookingCorporateDetails {
