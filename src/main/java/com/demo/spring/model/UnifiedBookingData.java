@@ -1,16 +1,26 @@
 package com.demo.spring.model;
-
-import lombok.Data; 
+import lombok.*;
+import org.jetbrains.annotations.NotNull;
 import javax.persistence.*;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Table(name = "unified_booking_data")
-@Data  
-public class UnifiedBookingData {
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+@NotNull
+@Size
 
+public class UnifiedBookingData implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "booking_id")
@@ -20,12 +30,12 @@ public class UnifiedBookingData {
     private String uuid;
 
     @Column(name = "checkin")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date checkin;
+    /*@Temporal(TemporalType.TIMESTAMP)*/
+    private long checkin;
 
     @Column(name = "checkout")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date checkout;
+    /*@Temporal(TemporalType.TIMESTAMP)*/
+    private long checkout;
 
     @Column(name = "grand_total")
     private Double grandTotal;

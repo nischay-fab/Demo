@@ -1,29 +1,38 @@
 package com.demo.spring.dto;
 
+import lombok.*;
+
 import java.util.Date;
 
-public interface DataProjectionDto {
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class DataProjectionDto {
 
-    String getBookingId();
+    String bookingId;
 
-    String getSummaryUuid();
+    String summaryUuid;
 
-    Date getCheckIn();
+    Long checkIn;
 
-    Date getCheckOut();
+    Long checkOut;
 
-    Double getGrandTotal();
+    Double grandTotal;
 
-    String getCorporateId();
+    String corporateId;
 
-    Double getComparisonPrice();
+    Double comparisonPrice;
 
-    String getLocalCurrency();
+    String localCurrency;
 
-    Double getLocalCurrencyAmount();
+    Double localCurrencyAmount;
 
-    String getNoShowReason();
+    String noShowReason;
 
-    String getTravellerName();
+    String travellerName;
 }
+
+
 

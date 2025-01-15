@@ -1,11 +1,9 @@
 package com.demo.spring.newservice.impl;
-
 import com.demo.spring.newservice.HdfsService;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.springframework.stereotype.Service;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;

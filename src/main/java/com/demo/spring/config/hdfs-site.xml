@@ -1,10 +1,32 @@
 <configuration>
+    <!-- Specifies the replication factor for HDFS blocks -->
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+
+    <!-- NameNode directory path on the local filesystem -->
     <property>
         <name>dfs.namenode.name.dir</name>
-        <value>file:///Users/nischaysinghintech/hadoop/namenode</value> <!-- Set this to your desired directory -->
+        <value>file:///Users/nischaysinghintech/hadoop/namenode</value>
     </property>
+
+    <property>
+        <name>dfs.permissions</name>
+        <value>false</value>
+    </property>
+
+    <!-- DataNode directory path on the local filesystem -->
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///Users/nischaysinghintech/hadoop/datanode</value> <!-- Set this to your desired directory -->
+        <value>file:///Users/nischaysinghintech/hadoop/datanode</value>
+    </property>
+
+    <!-- NameNode HTTP address (default is 9870) -->
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>localhost:9870</value>
     </property>
 </configuration>
+
+

@@ -1,12 +1,13 @@
 package com.demo.spring.model;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "booking_corporate_details") 
-public class BookingCorporateDetails {
+public class BookingCorporateDetails implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

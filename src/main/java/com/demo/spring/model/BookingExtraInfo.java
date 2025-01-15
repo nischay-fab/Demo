@@ -1,13 +1,14 @@
 package com.demo.spring.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import lombok.Data;  
 
 @Data  // Lombok will generate getters, setters, toString, equals, and hashCode
 @Entity
 @Table(name = "booking_extra_info")  
-public class BookingExtraInfo {
+public class BookingExtraInfo implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

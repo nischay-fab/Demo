@@ -1,5 +1,4 @@
 package com.demo.spring.controller;
-
 import com.demo.spring.newservice.UnifiedBookingDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class UnifiedBookingDataController {
 
-    @Autowired 
+    @Autowired
     private UnifiedBookingDataService unifiedBookingDataService;
 
     @GetMapping("/combined-booking-data")
     public String getCombinedBookingData() {
-        unifiedBookingDataService.insertCombinedBookingData(); // This should now work
+        unifiedBookingDataService.insertCombinedBookingData();
         return "Booking data inserted successfully!";
     }
 
-
+}
 
 /*
 package com.demo.spring.controller;
@@ -84,5 +83,5 @@ public class UnifiedBookingDataController {
 
 */
 
-}
+
 

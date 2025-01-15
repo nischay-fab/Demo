@@ -1,0 +1,3 @@
+booking_id,customer_name,booking_date,total_amount
+B001,John Doe,2024-12-01,150.50
+B002,Jane Smith,2024-12-02,200.00

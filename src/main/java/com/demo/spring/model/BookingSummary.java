@@ -1,6 +1,7 @@
 package com.demo.spring.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Date;
 import lombok.Data;  // Import Lombok's Data annotation
@@ -8,7 +9,7 @@ import lombok.Data;  // Import Lombok's Data annotation
 @Data
 @Entity
 @Table(name = "booking_summary") 
-public class BookingSummary {
+public class BookingSummary implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
