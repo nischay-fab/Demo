@@ -57,4 +57,100 @@ public class UnifiedBookingData implements Serializable {
 
     @Column(name = "traveller_name")
     private String travellerName;
+
+    public Double getGrandTotal() {
+        return grandTotal;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getBookingId() {
+        return bookingId;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public long getCheckin() {
+        return checkin;
+    }
+
+    public long getCheckout() {
+        return checkout;
+    }
+
+    public String getCorporateId() {
+        return corporateId;
+    }
+
+    public Double getComparisonPrice() {
+        return comparisonPrice;
+    }
+
+    public String getLocalCurrency() {
+        return localCurrency;
+    }
+
+    public Double getLocalCurrencyAmount() {
+        return localCurrencyAmount;
+    }
+
+    public String getNoShowReason() {
+        return noShowReason;
+    }
+
+    public String getTravellerName() {
+        return travellerName;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setBookingId(String bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
+    public void setCheckin(long checkin) {
+        this.checkin = checkin;
+    }
+
+    public void setCheckout(long checkout) {
+        this.checkout = checkout;
+    }
+
+    public void setGrandTotal(Double grandTotal) {
+        this.grandTotal = grandTotal;
+    }
+
+    public void setCorporateId(String corporateId) {
+        this.corporateId = corporateId;
+    }
+
+    public void setComparisonPrice(Double comparisonPrice) {
+        this.comparisonPrice = comparisonPrice;
+    }
+
+    public void setLocalCurrency(String localCurrency) {
+        this.localCurrency = localCurrency;
+    }
+
+    public void setLocalCurrencyAmount(Double localCurrencyAmount) {
+        this.localCurrencyAmount = localCurrencyAmount;
+    }
+
+    public void setNoShowReason(String noShowReason) {
+        this.noShowReason = noShowReason;
+    }
+
+    public void setTravellerName(String travellerName) {
+        this.travellerName = travellerName;
+    }
 }

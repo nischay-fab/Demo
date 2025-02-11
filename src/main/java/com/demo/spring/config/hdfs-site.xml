@@ -27,6 +27,7 @@
         <name>dfs.namenode.http-address</name>
         <value>localhost:9870</value>
     </property>
+
 </configuration>
 
 
