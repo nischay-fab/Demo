@@ -32,6 +32,8 @@ public class DataProjectionDto {
     String noShowReason;
 
     String travellerName;
+
+    String hotelTripId;
 }
 
 

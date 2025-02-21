@@ -14,6 +14,7 @@ public class BookingData {
     private Double localCurrencyAmount;
     private String noShowReason;
     private String travellerName;
+    private String city;
 
     // Getters and setters for all the fields
     public Long getId() {
@@ -110,5 +111,12 @@ public class BookingData {
 
     public void setTravellerName(String travellerName) {
         this.travellerName = travellerName;
+    }
+
+    public String getCity() {
+        return city;}
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }

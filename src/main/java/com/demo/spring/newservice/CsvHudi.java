@@ -65,8 +65,6 @@ public class CsvHudi {
 }
 */
 
-
-
 package com.demo.spring.newservice;
 import org.apache.spark.sql.*;
 import org.springframework.stereotype.Service;
@@ -100,7 +98,7 @@ public class CsvHudi {
 
             // Prepare Hudi options
             Map<String, String> hudiOptions = new HashMap<>();
-            hudiOptions.put("hoodie.datasource.write.recordkey.field", "id");
+            hudiOptions.put("hoodie.datasource.write.recordkey.field", "bookingId");
             hudiOptions.put("hoodie.datasource.write.precombine.field", "grand_total");
             hudiOptions.put("hoodie.datasource.write.partitionpath.field", "corporate_id");
             hudiOptions.put("hoodie.datasource.write.table.type", "COPY_ON_WRITE");

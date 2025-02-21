@@ -58,6 +58,9 @@ public class UnifiedBookingData implements Serializable {
     @Column(name = "traveller_name")
     private String travellerName;
 
+    @Column(name = "hotel_trip_id")
+    private String hotelTripId;
+
     public Double getGrandTotal() {
         return grandTotal;
     }
@@ -106,6 +109,8 @@ public class UnifiedBookingData implements Serializable {
         return travellerName;
     }
 
+    public String getHotelTripId() {return hotelTripId; }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -153,4 +158,6 @@ public class UnifiedBookingData implements Serializable {
     public void setTravellerName(String travellerName) {
         this.travellerName = travellerName;
     }
+
+    public void setHotelTripId(String hotelTripId) { this.hotelTripId=hotelTripId;}
 }

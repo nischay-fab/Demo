@@ -28,7 +28,8 @@ public class DrillJdbcService {
             // Fetch rows
             while (resultSet.next()) {
                 for (int i = 1; i <= columnCount; i++) {
-                    result.append(resultSet.getString(i)).append("\t");
+                    String value = resultSet.getString(i);
+                    result.append(value != null ? value : "NULL").append("\t");
                 }
                 result.append("\n");
             }
@@ -39,7 +40,3 @@ public class DrillJdbcService {
         return result.toString();
     }
 }
-
-
-
-

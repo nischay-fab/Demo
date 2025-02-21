@@ -59,7 +59,7 @@ public class CSVService {
 
                 BookingData data = new BookingData();
                 data.setId(Long.parseLong(record.get("id")));
-                data.setBookingId(record.get("booking_id"));
+                data.setBookingId(record.get("bookingId"));
                 data.setUuid(record.get("uuid"));
                 data.setCheckin(Long.parseLong(record.get("checkin")));
                 data.setCheckout(Long.parseLong(record.get("checkout")));
@@ -79,7 +79,7 @@ public class CSVService {
     }
 
     private void validateHeaders(CSVRecord record) {
-        if (!record.isMapped("id") || !record.isMapped("booking_id")) {
+        if (!record.isMapped("id") || !record.isMapped("bookingIid")) {
             throw new IllegalArgumentException("Missing required headers in the CSV file");
         }
     }

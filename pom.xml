@@ -21,7 +21,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-    
+
     <dependencies>
         <!-- Spring Boot Web and Data JPA -->
         <dependency>
@@ -161,6 +161,13 @@
             <artifactId>drill-jdbc-all</artifactId>
             <version>1.21.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version> <!-- Use the latest version available -->
+        </dependency>
+
 
         <!-- Spring Boot Test -->
         <dependency>

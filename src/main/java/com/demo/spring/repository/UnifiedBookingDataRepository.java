@@ -12,6 +12,7 @@ public interface UnifiedBookingDataRepository extends JpaRepository<UnifiedBooki
             "UNIX_TIMESTAMP(b.checkin) * 1000 AS checkin, " +
             "UNIX_TIMESTAMP(b.checkout) * 1000 AS checkout, " +
             "COALESCE(b.grand_total, 0.0) AS grand_total, " +
+            "COALESCE(b.hotel_trip_id, 'Default Hotel Trip ID') AS hotel_trip_id, " +
             "COALESCE(c.corporate_id, 'Default Corporate ID') AS corporate_id, " +
             "COALESCE(c.comparison_price, 0.0) AS comparison_price, " +
             "COALESCE(e.local_currency, 'Default Currency') AS local_currency, " +
@@ -30,7 +31,7 @@ public interface UnifiedBookingDataRepository extends JpaRepository<UnifiedBooki
             "    Booking.booking_no_show_reason n ON b.booking_id = n.booking_id " +
             "WHERE " +
             "    b.is_deleted = 0 " +
-            "LIMIT 1000",
+            "LIMIT 5000",
             nativeQuery = true)
     List<UnifiedBookingData> fetchCombinedBookingData();
 }

@@ -47,7 +47,7 @@ public class HudiToMySQLService {
             processedData.write()
                     .format("jdbc")
                     .option("url", "jdbc:mysql://localhost:3306/Presto")  // MySQL JDBC URL
-                    .option("dbtable", "booking_data_hudi")
+                    .option("dbtable", "unified_booking_data")
                     .option("user", "nischaysinghintech")  // MySQL username
                     .option("password", "Nischay@2003")  // MySQL password
                     .mode(SaveMode.Overwrite)  // Append data to the table
